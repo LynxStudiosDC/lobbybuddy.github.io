@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Command List</title>
+    <style>
+        body {
+            margin: 0;
+            overflow: hidden;
+            animation: moveBackground 20s linear infinite;
+            background: linear-gradient(90deg, #8e44ad, #e74c3c, #8e44ad);
+            background-size: 200% 100%;
+        }
+        .commands-container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .commands {
+            font-family: Arial, sans-serif;
+            color: #fff; /* Text color */
+            overflow: auto; /* Make content scrollable if it exceeds screen height */
+        }
+        .commands::-webkit-scrollbar {
+            width: 0; /* Make the scrollbar width zero (invisible) for WebKit browsers */
+        }
+        .commands::-webkit-scrollbar-thumb {
+            background: transparent; /* Hide the scrollbar thumb for WebKit browsers */
+        }
+        .commands h1 {
+            animation: fadeInUp 1s both;
+        }
+        .commands ul {
+            animation: fadeInUp 2s both;
+        }
+        .commands li {
+            animation: fadeInUp 3s both;
+        }
+        @keyframes moveBackground {
+            0% {
+                background-position: 200% 0;
+            }
+            100% {
+                background-position: -200% 0;
+            }
+        }
+        @keyframes fadeInUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="commands-container">
+        <div class="commands">
+            <h1>The Command List</h1>
+            <ul>
+
+                    <li>
+                        <h2>!skin {skin_name}</h2>
+                        <p><strong>Description:</strong> Change the bots skin to the input.</p>
+                        <p><strong>Example Usage:</strong> !skin Nog Ops</p>
+                    </li>
+
+                    <li>
+                        <h2>!backpack {backpack_name}</h2>
+                        <p><strong>Description:</strong> Change the bots backpack to the input.</p>
+                        <p><strong>Example Usage:</strong> !backpack Black Shield</p>
+                    </li>
+
+                    <li>
+                        <h2>!pickaxe {pickaxe_name}</h2>
+                        <p><strong>Description:</strong> Change the bots pickaxe to the input.</p>
+                        <p><strong>Example Usage:</strong> !pickaxe Raider&#39;s Revenge</p>
+                    </li>
+
+                    <li>
+                        <h2>!emote {emote_name}</h2>
+                        <p><strong>Description:</strong> Make the bot do an emote based on the input.</p>
+                        <p><strong>Example Usage:</strong> !emote Floss</p>
+                    </li>
+
+                    <li>
+                        <h2>!random {skin/backpack/pickaxe/emote/all}</h2>
+                        <p><strong>Description:</strong> Make the bot pick and put on a random cosmetic.</p>
+                        <p><strong>Example Usage:</strong> !random skin</p>
+                    </li>
+
+                    <li>
+                        <h2>!style {cosmetic_name} {variant_type} {variant}</h2>
+                        <p><strong>Description:</strong> Make the bot put on a style of a cosmetic.</p>
+                        <p><strong>Example Usage:</strong> !style Skull Trooper clothing_color 2</p>
+                    </li>
+
+                    <li>
+                        <h2>!privacy {public/fiends/private}</h2>
+                        <p><strong>Description:</strong> Change the privacy of the party.</p>
+                        <p><strong>Example Usage:</strong> !privacy private</p>
+                    </li>
+
+                    <li>
+                        <h2>NOT ALL COMMANDS ARE ADDED YET!</h2>
+                        <p><strong>Description:</strong> NOT ALL COMMANDS ARE ADDED YET!</p>
+                        <p><strong>Example Usage:</strong> NOT ALL COMMANDS ARE ADDED YET!</p>
+                    </li>
+
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
