@@ -1,4 +1,7 @@
-https://www.lobbybuddys.com/
+<link rel="shortcut icon" href="/ghost.png" type="image/x-icon">
+
+
+https://www.lobbybuddys.com
 https://www.lobbybuddys.com/commands
 https://www.lobbybuddys.com/bots
 https://www.lobbybuddys.com/about
